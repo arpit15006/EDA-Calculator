@@ -2,6 +2,8 @@
 
 This project provides a comprehensive solution for predicting bank loan defaults based on client application data. It includes data exploration, preprocessing, model building, and a web application for visualizing results and making predictions.
 
+** Make sure to put all the .CSV files provided for hackathon in the same folder to run AI analysis and install the required python libraries **
+
 ## Problem Statement
 
 The goal of this project is to predict whether a client will default on a loan based on their application information. This helps banks make better lending decisions and manage risk effectively.
@@ -79,5 +81,3 @@ The models are evaluated using the following metrics:
 - Precision
 - Recall
 - F1 Score
-
-** Make sure all the to put all the .CSV in the same folder **
