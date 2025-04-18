@@ -1,0 +1,233 @@
+/* Main styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: #f5f7f9;
+}
+
+/* Main content styling */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Card styling */
+.stcard {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Metric styling */
+div[data-testid="stMetricValue"] {
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    color: #1f77b4 !important;
+}
+
+div[data-testid="stMetricLabel"] {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+/* Header styling */
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    color: #34495e;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #3498db;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Button styling */
+.stButton > button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    white-space: pre-wrap;
+    background-color: #f8f9fa;
+    border-radius: 4px 4px 0 0;
+    gap: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #3498db !important;
+    color: white !important;
+}
+
+/* Dataframe styling */
+.dataframe {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.dataframe thead tr {
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: left;
+}
+
+.dataframe th,
+.dataframe td {
+    padding: 12px 15px;
+}
+
+.dataframe tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.dataframe tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.dataframe tbody tr:last-of-type {
+    border-bottom: 2px solid #3498db;
+}
+
+/* Info box styling */
+.stAlert {
+    background-color: #e8f4fd;
+    border-left: 5px solid #3498db;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* Success message styling */
+div[data-testid="stSuccessMessage"] {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* Warning message styling */
+div[data-testid="stWarningMessage"] {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* Error message styling */
+div[data-testid="stErrorMessage"] {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* Custom classes */
+.highlight-box {
+    background-color: #f8f9fa;
+    border-left: 5px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.risk-high {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.risk-medium {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.risk-low {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* Dashboard cards */
+.dashboard-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.metric-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.metric-card h3 {
+    margin-top: 0;
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+.metric-card p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #3498db;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .dashboard-metrics {
+        flex-direction: column;
+    }
+    
+    .metric-card {
+        width: 100%;
+    }
+}
