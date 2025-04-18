@@ -59,8 +59,7 @@ The dataset consists of three main files:
    ```
    streamlit run app.py
    ```
-2. Open your browser and navigate to the URL shown in the terminal (usually http://localhost:8501)
-3. Use the sidebar to navigate between different pages:
+2. Use the sidebar to navigate between different pages:
    - **Home**: Overview of the project
    - **Data Exploration**: Visualize and understand the dataset
    - **Model Performance**: Evaluate the performance of different machine learning models
