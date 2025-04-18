@@ -81,6 +81,4 @@ The models are evaluated using the following metrics:
 - Recall
 - F1 Score
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+** Make sure all the to put all the .CSV in the same folder **
